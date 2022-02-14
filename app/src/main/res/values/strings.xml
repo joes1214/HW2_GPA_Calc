@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GPA_salcedoj6_Calculator</string>
+    <string name="compute_gpa">Compute GPA</string>
+    <string name="process_error">ERROR: Cannot have empty values!</string>
+    <string name="outOfBounds">ERROR: Values out of bounds! 0 - 100</string>
+    <string name="results">GPA: </string>
+    <string name="computeGPA">Compute GPA</string>
+    <string name="clearForm">Clear</string>
+</resources>
