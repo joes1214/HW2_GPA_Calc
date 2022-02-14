@@ -7,35 +7,35 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/clearBtn2"
+        android:id="@+id/clearBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/clearForm"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.972"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/submitBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/compute_gpa"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.972"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/gpaEntry1"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="17dp"
         android:ems="10"
         android:inputType="number"
         android:minHeight="48dp"
@@ -57,12 +57,13 @@
 
     <TextView
         android:id="@+id/gpaLabel2"
-        android:layout_width="39dp"
-        android:layout_height="18dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:layout_marginBottom="16dp"
         android:text="GPA 2:"
         app:layout_constraintBottom_toTopOf="@+id/gpaEntry2"
+        app:layout_constraintStart_toEndOf="@+id/gpaEntry1"
         app:layout_constraintStart_toStartOf="@+id/gpaEntry2"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -70,14 +71,13 @@
         android:id="@+id/gpaEntry2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:inputType="number"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.942"
         app:layout_constraintStart_toEndOf="@+id/gpaEntry1"
         app:layout_constraintTop_toBottomOf="@+id/gpaLabel2" />
 
@@ -123,12 +123,12 @@
         android:id="@+id/gpaEntry4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.953"
         app:layout_constraintStart_toEndOf="@+id/gpaEntry3"
         app:layout_constraintTop_toBottomOf="@+id/gpaLabel4" />
 
@@ -136,7 +136,7 @@
         android:id="@+id/gpaLabel5"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         android:text="GPA 5:"
         app:layout_constraintBottom_toTopOf="@+id/gpaEntry5"
@@ -146,16 +146,13 @@
 
     <EditText
         android:id="@+id/gpaEntry5"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
         android:ems="10"
         android:inputType="number"
         android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gpaLabel5" />
 
@@ -167,20 +164,17 @@
         android:background="#FFFFFF"
         android:text=""
         app:layout_constraintBottom_toTopOf="@+id/submitBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/gpaDisplay" />
 
     <TextView
         android:id="@+id/gpaDisplay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="16dp"
         android:text="GPA: "
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/submitBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.851"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
